@@ -85,7 +85,8 @@
         var light_icon = document.getElementById("light_icon")
         /* 
             This is how you declare a variable in javascript.
-            Right now, we are selecting the lightbulb so we can do things to it
+            Right now, we are using this selector statement
+            to get the lightbulb icon so we can do things to it
         */
         
         //you can also define this function as var changeColor = function () { ...
@@ -132,5 +133,11 @@
                 light_icon.style.opacity = String(Number(light_icon.style.opacity) - .1)
             }
         })
+        
+        /*
+            ok, so once you understand this code, try to modify it
+            so a user can change the color of the light when it is turned on
+            (look up the range slider input type and the css rgb property to get started)
+        */
     </script>
 </html>
