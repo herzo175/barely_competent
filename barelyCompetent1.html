@@ -8,23 +8,32 @@
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <!--
             We'll also go ahead and bring in jquery's library. It's useful in handling events on the page
-            Go ahead and run this in your browser and make sure everything is working with chrome's developer tools
+            This is how you bring in javascript files into your html pages
         -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
-        <!--This is semantic ui's javascript library javscript can be written inside script tags or included like the css file above-->
+        <!--
+            This is semantic ui's javascript library which has to be called after we get jQuery because it uses it
+            Go ahead and run this in your browser and make sure the files are coming in with chrome's developer tools
+        -->
         
         <style>
-            /*you can also write css in style tags like this*/
+            /*you can also write css inside of style tags like this*/
+            /*An id attribute ("#") is assigned to one html element*/
             #app {
-                /*This selects a specific thing with an id of app and applies this css to it*/
+                /*This selects a specific thing with an id of app and applies this css to it (which centers the element)*/
                 margin: auto;
                 width: 50%;
                 padding-top: 10%;
+                /*
+                    Padding is used to space elements out. If you go to the elements tab of chrome's developer tools,
+                    you can highlight elements on the page. Padding is highlighted in green
+                */
             }
             
+            /*A field attribute (".") can be assigned to multiple html element*/
             .field {
                 /*This selects multiple things with a class of field and applies css to them*/
-                text-align:center;
+                text-align: center;
                 padding-top: 20px;
             }
         </style>
